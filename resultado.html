@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .cabecalho {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .cabecalho nav {
+            display: flex;
+            justify-content: center;
+            width: 350px;
+        }
+
+        .cabecalho nav button {
+            height: 80px;
+            width: 100%;
+            text-align: center;
+            border-bottom-left-radius: 60px;
+            /* Canto inferior esquerdo arredondado */
+            border-bottom-right-radius: 60px;
+            background-color: black;
+            color: white;
+
+        }
+
+        .cabecalho nav button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .principal {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+
+        }
+
+        @keyframes revealAnimation {
+  from {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  
+  to {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+        }
+
+
+        main .cats {
+            width: 50%;
+            height: 1110px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: cyan;
+            font-size: 80px;
+            padding-top: 30%;
+            animation: revealAnimation 1s forwards;
+
+
+        }
+
+        main .dogs{
+            width: 50%;
+            height: 1110px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            animation: carregar-result 1s;
+            font-size: 80px;
+            padding-top: 30%;
+        }
+
+       
+        
+    </style>
+</head>
+
+<body>
+
+
+    <header class="cabecalho">
+        <nav>
+            <button onclick="paginaInicial()" id="atualizar">Atualizar</button>
+            <button id="voltar" onclick="voltarInicio()"> Voltar </button>
+            <button id="reiniciar" onclick="zerarVotacao()">Reiniciar</button>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <div class="dogs">
+            <p id="resultdog" ></p>
+        </div>
+        <div  class="cats">
+            <p id="resultcat"></p>
+        </div>
+        </main>
+
+    </div>
+
+    <script>var exports = {}; </script>
+    <script src="votacao.js"></script>
+</body>
+
+</html>

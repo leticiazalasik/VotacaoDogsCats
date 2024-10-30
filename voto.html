@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela inicial</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(fundo-tela1.jpg);
+            background-size: cover;
+            display: flex;
+justify-content: center;
+
+
+        }
+
+        .card {
+
+            border-radius: 15px;
+            border-top: 8px solid red;
+            text-align: center;
+            width: 35%;
+            height: 607px;
+            background-color: white;
+            margin-left: 50px;
+            border-bottom: 8px solid aqua;
+        }
+        .img{ 
+            margin-top: 25%;
+        }
+
+        h1{
+            padding-bottom: 9%;
+        }
+
+        .cats{
+            background-color: red;
+            border-radius: 10px;
+            justify-content: center;
+            padding-bottom: 5%;
+            width: 80%;
+            height: 50px;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 3%;
+            margin-bottom: 2%;
+            color: white;
+            font-size: 20px;
+
+
+
+        }
+
+        .dogs{
+            background-color: aqua;
+            border-radius: 10px;
+            justify-content: center;
+            padding-bottom: 5%;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 3%;
+            margin-bottom: 13%;
+            color: white;
+            font-size: 20px;
+            height: 50px;
+
+
+
+
+        }
+
+        .resultado{
+            background-color: blue;
+            border-radius: 10px;
+            justify-content: center;
+            padding-bottom: 5%;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 3%;
+            color: white;
+            font-size: 20px;
+            height: 50px;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="patinha.jpeg" alt=""height="75px" class="img">
+
+        <h1> Qual seu pet preferido?</h1>
+
+        <button class="cats" onclick="votoGato()"> Cats</button>
+        <button class="dogs" onclick="votoCachorro()">Dogs</button>
+
+        <button class="resultado" id="resultado" onclick="mostrarResultado()"> Ver resultado </button>
+    </div>
+
+    <script>var exports = {}; </script>
+    <script src="votacao.js"></script>
+</body>
+
+</html>
