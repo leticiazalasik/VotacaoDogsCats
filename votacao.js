@@ -3,14 +3,15 @@ var votosCachorro = 0;
 var totalVotos = 0;
 var porcentagemGato = 0;
 var porcentagemCachorro = 0;
+
 function votoGato() {
-    alert('Registro alterado com sucesso');
+    alert('Voto registrado para gato!');
     var votarGato = document.getElementById('cats');
     votosGato = votosGato + 1;
     totalVotos = totalVotos + 1;
 }
 function votoCachorro() {
-    alert('Registro alterado com sucesso');
+    alert('Voto registrado para cachorro!');
     var votarCachorro = document.getElementById('dogs');
     votosCachorro = votosCachorro + 1;
     totalVotos = totalVotos + 1;
