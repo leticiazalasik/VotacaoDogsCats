@@ -11,4 +11,4 @@ Você pode também clicar em atualizar os votos e zerar a votação.
 Esse projeto foi criado utilizando as tecnologias:
 #### :small_blue_diamond: Vscode - HTML, CSS, SCSS, Angular, HTML, Sass, Typescript, JavaScript e Bootstrap
 
-🚧 Em andamento...
+🚧 Em andamento...🚧 
