@@ -33,3 +33,7 @@ function mostrarResultado() {
 function novaJanela() {
     window.location.href = ("voto.html");
 }
+
+function voltarInicio() {
+    window.location.href = "voto.html";
+}
